@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(35deg,rgb(42, 81, 94),rgb(149, 243, 227));
+
+}
+.content{
+    border-radius: 15px;
+    background-color: rgb(247, 243, 243);
+    width: 960px;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(45deg, rgb(42, 81, 94),rgba(149, 243, 227));
+    height: 100%;
+    width: 40%;
+    
+    left: 0;
+}
+.first-content{
+    display: flex;
+    
+}
+.first-content .second-colum{
+    z-index: 11;
+    
+}
+.first-colum{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+    
+}
+.second-colum{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary{
+    color: #fff;
+}
+.title-second{
+    color: rgb(42, 81, 94);
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary{
+    color: #fff;
+}
+.description-second{
+    color: rgb(42, 81, 94) ;
+}
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: rgb(220, 226, 222);
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin: 1rem;
+    
+}
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+.btn-second{
+    background-color:rgb(42, 81, 94);
+    color:rgb(221, 236, 236) ;
+    transition: background-color .5s;
+}
+.btn-primary:hover{ 
+    background-color:rgb(247, 243, 243);
+    color: rgb(42, 81, 94);
+    border: 1px solid  rgb(42, 81, 94);
+}
+.btn-second:hover{
+    background-color: rgb(247, 243, 243);
+    border: 1px solid  rgb(42, 81, 94);
+    color: rgb(42, 81, 94);
+}
+.list-social-media{
+    display: flex;
+    list-style: none;
+}
+.item-social-media{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #95a5a6;
+}
+.social-media{
+    margin: 1rem 0;
+}
+.link-social-media:hover .item-social-media{
+    background-color:rgb(42, 81, 94) ;
+    border: 1px solid rgb(247, 243, 243) ;
+    color:rgb(247, 243, 243) ;
+}
+.link-social-media .item-social-media {
+    transition: background-color .5s;
+}
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: center;
+}
+.form input{
+    height: 32px;
+    border: none;
+    background-color: #d6dee0;
+    width: 100%;     
+}
+.label-input{
+    background-color:#ecf0f1 ;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.icon-input{
+    color:#7f8c8d ;
+    padding: 0 5px;
+}
+/*second-content*/
+
+.second-content{
+    position: absolute;
+    display: flex;
+        
+}
+.second-content .first-colum{
+    order: 2;
+    z-index: -1;
+}
+.second-content .second-colum{
+    order: 1;
+    z-index: -1;
+}
+.password{
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 10px 0;
+}
+.password::first-letter{
+    text-transform: capitalize;
+}
+.voltar-js .first-content .first-colum,
+.voltar-js .first-content .second-colum{
+    z-index: -1;
+}
+.voltar-js .second-content .first-colum,
+.voltar-js .second-content .second-colum{
+    z-index: 11;
+}
+.voltar-js .content::before{
+    left: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.iniciar-js .second-content .first-colum,
+.iniciar-js .second-content .second-colum{
+    z-index: -1;
+}
+.iniciar-js .first-content .first-colum,
+.iniciar-js .first-content .second-colum{
+    z-index: 11;
+}
+.iniciar-js .content::before{
+    left: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
